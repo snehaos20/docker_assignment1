@@ -19,7 +19,7 @@ pipeline {
                 docker run -d --name server -p 80:80 httpd
                 docker exec -it server bash
                 docker cp index.html /mnt/Q123 server:/usr/local/apache2/htdocs
-                exit
+                
             }
         }
     }
