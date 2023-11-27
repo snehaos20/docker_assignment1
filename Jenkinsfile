@@ -1,4 +1,4 @@
-opipeline {
+pipeline {
     agent {
     label{
         label "built-in"
@@ -10,7 +10,7 @@ opipeline {
         stage("getting git repository"){
             steps {
                 echo "clone project"
-                sh "rm -rf *"
+                rm -rf *
                 
             }
         }
