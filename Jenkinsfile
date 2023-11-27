@@ -2,7 +2,7 @@ opipeline {
     agent {
     label{
         label "built-in"
-        customWorkspace "/mnt"
+        customWorkspace "/mnt/cloneProject"
     }
     }
     
@@ -10,14 +10,10 @@ opipeline {
         stage("getting git repository"){
             steps {
                 echo "clone project"
+                rm -rf *
                 
             }
         }
-        stage ("creating container"){
-            steps {
-                
-                
-            }
-        }
+        
     }
 }
