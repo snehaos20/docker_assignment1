@@ -10,7 +10,7 @@ opipeline {
         stage("getting git repository"){
             steps {
                 echo "clone project"
-                rm -rf *
+                sh "rm -rf *"
                 
             }
         }
